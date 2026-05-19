@@ -35,13 +35,13 @@ data class Context(
         val DefaultAndroid = Context(
             client = Client(
                 clientName = "ANDROID_MUSIC",
-                clientVersion = "5.28.1",
+                clientVersion = "6.41.51",
                 platform = "MOBILE",
-                androidSdkVersion = 30,
-                userAgent = "com.google.android.apps.youtube.music/5.28.1 (Linux; U; Android 11) gzip"
+                androidSdkVersion = 34,
+                userAgent = "com.google.android.apps.youtube.music/6.41.51 (Linux; U; Android 14) gzip"
             )
         )
-
+        
         val DefaultAgeRestrictionBypass = Context(
             client = Client(
                 clientName = "TVHTML5_SIMPLY_EMBEDDED_PLAYER",
