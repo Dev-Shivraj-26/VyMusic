@@ -38,7 +38,7 @@ data class Context(
                 clientVersion = "6.41.51",
                 platform = "MOBILE",
                 androidSdkVersion = 34,
-                userAgent = "com.google.android.apps.youtube.music/6.41.51 (Linux; U; Android 14; Build/UQ1A.240205.002) Max/4.4.1"
+                userAgent = "com.google.android.apps.youtube.music/6.41.51 (Linux; U; Android 14; Build/UQ1A.240205.002) gzip"
             )
         )
         
