@@ -1,35 +1,5 @@
 name: CI & Automated Release
 
-on: 
-  push: 
-    branches: - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: "17"
-          distribution: "temurin"
-          cache: gradle
-      - name: Build with Gradle
-        run: ./gradlew assembleDebug
-      - name: Create Automated Release
-        uses: softprops/action-gh-release@v2
-        with:
-          draft: true
-          prerelease: true
-          files: app/build/outputs/apk/debug/vyMusic.apk
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-/*
-name: CI
-
 on: push
 
 jobs:
@@ -47,6 +17,7 @@ jobs:
         run: ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
+          draft: true
+          prerelease: true
           name: app-debug.apk
-          path: app/build/outputs/apk/debug/app-debug.apk
-*/
+          path: app/build/outputs/apk/debug/VyMusic.apk
