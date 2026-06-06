@@ -19,5 +19,5 @@ jobs:
         with:
           draft: true
           prerelease: true
-          name: app-debug.apk
+          name: VyMusic.apk
           path: app/build/outputs/apk/debug/VyMusic.apk
